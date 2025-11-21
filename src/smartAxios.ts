@@ -74,7 +74,7 @@ constructor(config?: SmartAxiosConfig) {
     throw new Error("Unexpected retry loop exit");
   }
 
-  // 🧩 Helper Methods
+  // Helper Methods
   get<T = any>(url: string, config?: SmartAxiosConfig) {
     return this.request<T>({ ...config, method: "GET", url });
   }
